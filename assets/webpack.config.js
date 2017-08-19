@@ -48,6 +48,12 @@ module.exports = (env) => {
         },
 
         {
+          test: /\.(vue)$/,
+          exclude: /node_modules/,
+          loader: ["vue-loader"]
+        },
+
+        {
           test: /\.(gif|png|jpe?g|svg)$/i,
           exclude: /node_modules/,
           loaders: [
