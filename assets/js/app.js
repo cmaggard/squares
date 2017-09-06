@@ -21,6 +21,10 @@ import "phoenix_html"
 // import socket from "./socket"
 
 import Vue from 'vue'
+import Vuetify from 'vuetify'
+
+Vue.use(Vuetify)
+
 import HelloWorld from '../components/hello-world.vue'
 
 const vm = new Vue({
