@@ -21,16 +21,18 @@ import "phoenix_html"
 // import socket from "./socket"
 
 import Vue from 'vue'
+//import VueRouter from 'vue-router'
 import Vuetify from 'vuetify'
 
 Vue.use(Vuetify)
+//Vue.use(VueRouter)
 
-import HelloWorld from '../components/hello-world.vue'
+import App from '../components/app.vue'
 
 const vm = new Vue({
   el: '#app',
-  components: {
-    'hello-world': HelloWorld
+  data: {
+    message: "hello!"
   },
-  render: h => h('hello-world')
-})
+  render: h => h(App)
+});
